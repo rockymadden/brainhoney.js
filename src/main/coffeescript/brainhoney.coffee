@@ -28,7 +28,7 @@ brainhoney =
 					try
 						json = JSON.parse(data)
 					catch
-						deferred.reject(data)
+						deferred.resolve(data)
 
 					self.response(json).fold(
 						((_) -> deferred.reject(_)),
@@ -76,7 +76,7 @@ brainhoney =
 					try
 						json = JSON.parse(data)
 					catch
-						deferred.reject(data)
+						deferred.resolve(data)
 
 					self.response(json).fold(
 						((_) -> deferred.reject(_)),
