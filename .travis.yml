@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "0.10"
+script:
+  - "grunt travis"
+env:
+  global:
+    - secure: "eP2HGzycg2FKlGsJD97nEUNT5f5CwZgUmhlK0qBEJDdYvMn2ZJYd4vRpRjGsOdARrrqxBgpHZEJq/WrS6zeXOSSvprcrgqQosxchVw2Fd71oNIwfhIrLY5X0bATLrh6IKzXPM1g3j3tmmajYaxNvYyOJ4TZCUrQEz+iN7rAqlTA="
+    - secure: "UK7cy8jUTeSBa+xFPIwQYTq9yUKxBu75ESW0i2t1a03XCgZv+cW1l+OlBcG88vkUkoPjX6csAhqbHEJG68MMhoobexU7eJRl8c3pO/LyEkBQaj7Gh31wkmDx0xFKBaUn2KhN/nuQP7LdPSPj/NDAWhz/315MZ/LLsMp14nAdL24="
+    - secure: "Gn9MDQue2VrXFgJw6t7sTXur3VHJuLQsNXVb3Ty59yfK1FcIke6vBoTBMzwtXZ0M2cQ85Fxce1yzsYf9Mjqr+RVl7H41cFLIkLht1/a6SWMDlWIIVk1tL2WTIt3p2+y7b6SbVhfbZe09FC6sME82rwL4cGT9bWfGy8HskWvNWuk="
+    - secure: "DLnELGqTMFTPjL2mXDmbsbX1mU9ncCDVfDWyRezsQXe7iJseV67o7DKMwKy9VifG0w3jhkrj2cb4p7Y97/F/dZmydtdINDBvWG8Lll8o1mmGDyMe1puIUB581DJyYqvWtXlQMpaWfaxHvwRtZPw15A7/pLsu9x6wrb5DO+hLqkQ="
+    - secure: "P6NmasJmqC4ewt1SWACiSCbnrnik5Ao6Skz5ikBGFUTttKbVuBVaftBSe4DpVe+sn9j9NE66yu/k6mWlKIdT1SouY6jczBL3r9v9GKx7bYHP2w2C/nFvCAg9aLypwO4W/K0ggvOGLl+sMrPyGXNM4bPl3jpmo1obdXbLhob2Ri4="
+    - secure: "TahR5tUjCsnhgUA5RiJgctoil58/NdxZasOqLQZJRzQO4nx18W7ofzhx1XlK7SQuvi5MHt7QSD9AMr6keNpmkcdfvpuGWbOUHcK7pgpfrNvXjxNiPP2vTTbGq3gWo4Love8u+TJmcwaGrkK7l4lA1iR+rNMOk+KjUAbiwEFmdiQ="

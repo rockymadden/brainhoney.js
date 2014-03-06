@@ -1,0 +1,31 @@
+{
+	"author": "Rocky Madden (http://rockymadden.com/)",
+	"dependencies": {
+		"bilby": "0.0.x",
+		"lazy.js": "0.3.x",
+		"q": "0.9.x",
+		"truthy.js": "0.6.x"
+	},
+	"description": "Functional wrapper for the BrainHoney DLAP API.",
+	"devDependencies": {
+		"coffee-script": "1.6.x",
+		"grunt": "0.4.x",
+		"grunt-cli": "0.1.x",
+		"grunt-contrib-coffee": "0.7.x",
+		"grunt-mocha-cov": "0.1.x",
+		"mocha": "1.15.x",
+		"mocha-term-cov-reporter": "0.2.x",
+		"should": "2.1.x"
+	},
+	"engines": {"node": ">=0.10.0"},
+	"homepage": "http://rockymadden.com/brainhoney.js/",
+	"keywords": ["brainhoney", "agilix", "lms", "education", "edtech"],
+	"main": "target/brainhoney.js",
+	"name": "brainhoney.js",
+	"repository": {"type": "git", "url": "git://github.com/rockymadden/brainhoney.js.git"},
+	"scripts": {
+		"blanket": {"pattern": ["target/brainhoney-test.js"]},
+		"prepublish": "grunt"
+	},
+	"version": "0.0.0"
+}

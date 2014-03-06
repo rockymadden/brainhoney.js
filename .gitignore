@@ -1,0 +1,26 @@
+# Core ignores.
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*#
+.git/
+
+# OS ignores.
+.DS_Store
+
+# IDE ignores.
+*.idea
+*.iml
+
+# Build ignores.
+target
+
+# Project ignores.
+node_modules
+*.config.json
