@@ -8,8 +8,8 @@ describe('brainhoney', ->
 			it('should work', (done) ->
 				http = new brainhoney.Http(
 					process.env.BRAINHONEYJS_HOST,
-					process.env.BRAINHONEYJS_PATH,
-					process.env.BRAINHONEYJS_PORT
+					process.env.BRAINHONEYJS_PORT,
+					process.env.BRAINHONEYJS_PATH
 				)
 				login =
 					cmd: 'login',
@@ -20,8 +20,8 @@ describe('brainhoney', ->
 					.then((_) ->
 						new brainhoney.Http(
 							process.env.BRAINHONEYJS_HOST,
-							process.env.BRAINHONEYJS_PATH,
 							process.env.BRAINHONEYJS_PORT,
+							process.env.BRAINHONEYJS_PATH,
 							_.fold(((j) -> j.token), null)
 						)
 					)
@@ -37,8 +37,8 @@ describe('brainhoney', ->
 			it('should work', (done) ->
 				http = new brainhoney.Http(
 					process.env.BRAINHONEYJS_HOST,
-					process.env.BRAINHONEYJS_PATH,
-					process.env.BRAINHONEYJS_PORT
+					process.env.BRAINHONEYJS_PORT,
+					process.env.BRAINHONEYJS_PATH
 				)
 
 				http.post('putrandomdata', test: 'test')
@@ -64,8 +64,8 @@ describe('brainhoney', ->
 			it('should work', (done) ->
 				client = new brainhoney.Client(
 					process.env.BRAINHONEYJS_HOST,
-					process.env.BRAINHONEYJS_PATH,
 					process.env.BRAINHONEYJS_PORT,
+					process.env.BRAINHONEYJS_PATH,
 					process.env.BRAINHONEYJS_USERNAME,
 					process.env.BRAINHONEYJS_PASSWORD
 				)

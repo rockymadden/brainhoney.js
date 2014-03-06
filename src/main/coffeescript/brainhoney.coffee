@@ -5,7 +5,7 @@ truthy = require('truthy.js')
 
 brainhoney =
 	Http: class Http
-		constructor: (@host, @path, @port, @token) ->
+		constructor: (@host, @port, @path, @token) ->
 			@httplib = if @port is 443 then require('https') else require('http')
 
 		get: (command, parameters) ->
@@ -103,15 +103,15 @@ brainhoney =
 				)
 
 	Client: class Client
-		constructor: (@host, @path, @port, @username, @password) ->
+		constructor: (@host, @port, @path, @username, @password) ->
 
 		withSession: (f) ->
 			self = @
 
-			new Http(@host, @path, @port).post(null, cmd: 'login', username: @username, password: @password)
+			new Http(@host, @port, @path).post(null, cmd: 'login', username: @username, password: @password)
 				.then((_) ->
 					token = _.map((_) -> _.token).getOrElse(null)
-					new Http(self.host, self.path, self.port, token)
+					new Http(self.host, self.port, self.path, token)
 				)
 				.then((http) -> f(Object.freeze(
 					# Annoucements.
