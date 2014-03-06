@@ -42,8 +42,9 @@ brainhoney =
 			deferred.promise
 
 		response: (json) ->
-			if truthy.bool.existy(json.response) and
-			truthy.bool.existy(json.response.code) and
+			if truthy.bool.objecty(json) and
+			truthy.bool.objecty(json.response) and
+			truthy.bool.lengthy(json.response.code) and
 			json.response.code is 'OK'
 				bilby.right(truthy.opt.lengthy(
 					lazy(json.response)
