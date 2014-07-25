@@ -1,9 +1,10 @@
-#brainhoney.js [![Build Status](http://img.shields.io/travis-ci/rockymadden/brainhoney.js.png)](http://travis-ci.org/rockymadden/brainhoney.js) [![Generic](http://img.shields.io/coverage/100%25.png?color=brightgreen)]() [![Generic](http://img.shields.io/license/MIT.png?color=brightgreen)]()
+#brainhoney.js [![Build Status](http://img.shields.io/travis-ci/rockymadden/brainhoney.js.png)](http://travis-ci.org/rockymadden/brainhoney.js)
 
-Functional wrapper around the BrainHoney DLAP API. All publicly available BrainHoney DLAP API functions are supported. 
+Functional wrapper around the BrainHoney DLAP API. All publicly available BrainHoney DLAP API functions are supported.
 
-## Depending
-The project is available on the [Node Packaged Modules registry](https://npmjs.org/package/brainhoney.js). Add the dependency in your package.json file:
+## Dependency
+The project is available on the [Node Packaged Modules registry](https://npmjs.org/package/brainhoney.js). Add the
+dependency in your package.json file:
 
 ```javascript
 "dependencies": {
@@ -11,8 +12,8 @@ The project is available on the [Node Packaged Modules registry](https://npmjs.o
 }
 ```
 
-## Using
-Create client (domain, port, path, username, password):
+## Usage
+Create client:
 ```coffeescript
 client = new brainhoney.Client('ct.agilix.com', 443, '/dlap/dlap.ashx', 'username', 'password')
 ```
@@ -27,7 +28,7 @@ user = requests: user: [
 	email: 'email@example.com'
 	domainid: 123456
 ]
-			
+
 client.withSession((session) ->
 	session.createUsers2(user)
 		.then((response) -> response.fold(((r) -> r.response[0].user.userid), -1))
@@ -38,11 +39,11 @@ client.withSession((session) ->
 )
 ```
 
-## Licensing
+## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2013 Rocky Madden (http://rockymadden.com/)
+Copyright (c) 2014 Rocky Madden (http://rockymadden.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
