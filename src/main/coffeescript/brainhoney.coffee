@@ -280,6 +280,8 @@ brainhoney =
 					putWikiPage: bilby.bind(http.post)(http, 'putwikipage')
 					restoreWikiPages: bilby.bind(http.post)(http, 'restorewikipages')
 					updateWikiPageViewed: bilby.bind(http.post)(http, 'updatewikipageviewed')
-				))).done(->)
+				)))
+				.fail(-> f(null))
+				.done(->)
 
 module.exports = Object.freeze(brainhoney)
